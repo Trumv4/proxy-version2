@@ -43,7 +43,7 @@ IP=$(curl -s ifconfig.me)
 # === RANDOM PORT VÀ PASSWORD ===
 PORT=$(shuf -i 20000-60000 -n 1)
 PASS_SOCKS=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
-USER=anhtu
+USER=jpnamkhang
 
 # === TẠO USER SOCKS5 ===
 id "$USER" &>/dev/null || useradd "$USER"
@@ -106,7 +106,7 @@ PING_RESULT=$(ping -c 3 $IP | tail -2 | head -1 | awk -F '/' '{print $5 " ms"}')
 # === BOT TELEGRAM CẤU HÌNH ===
 BOT_TOKEN="7661562599:AAG5AvXpwl87M5up34-nj9AvMiJu-jYuWlA"
 ADMIN_CHAT_ID="7051936083"
-GROUP_CHAT_ID="-1002322055133"
+GROUP_CHAT_ID="-4978014870"
 
 # === TIN ĐẦY ĐỦ GỬI ADMIN ===
 MESSAGE="🎯 SOCKS5 Proxy   SSH Ready!
